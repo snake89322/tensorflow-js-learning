@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TensorFlow.js Pitch Training Accuracy</title>
+
+  <style>
+    html,
+    body {
+      font-family: Roboto, sans-serif;
+      color: #5f6368;
+    }
+    body {
+      background-color: rgb(248, 249, 250);
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <h3 id="waiting-msg">Waiting for server...</h3>
+  <p>
+  <span style="font-size:16px" id="trainingStatus"></span>
+  <p>
+  <div id="predictContainer" style="font-size:16px;display:none">
+    Sensor data: <span id="predictSample"></span>
+    <button style="font-size:18px;padding:5px;margin-right:10px" id="predict-button">Predict Pitch</button>
+    <p>
+    Predicted Pitch Type: <span style="font-weight:bold" id="predictResult"></span>
+  </div>
+  <!-- Import the main script file -->
+  <script src="./script.js"></script>
+</body>
+</html>
